@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.matheus.citycar">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_user_ve_solicitacao" />
+        <activity android:name=".Activity_user_solicita_veiculo" />
+        <activity android:name=".Activity_user_ve_locacoes" />
+        <activity android:name=".Activity_user_aciona_socorro" />
+        <activity android:name=".Activity_ger_cad_veiculo" />
+        <activity android:name=".Activity_ger_obt_info_veiculo" />
+        <activity android:name=".Activity_ger_cad_usuario" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity_ger_menu" />
+        <activity android:name=".Activity_ger_AprovaSolicitacao" />
+        <activity android:name=".Activity_ger_DetalheSolicitacao" />
+        <activity android:name=".Activity_Lista_Veiculos_Disponiveis"></activity>
+    </application>
+
+</manifest>

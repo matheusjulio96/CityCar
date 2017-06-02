@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">CityCar</string>
+    <!--string android>  android.R.string.ok-->
+
+    <!--Telas Geral-->
+    <string name="txt_voltar">Voltar</string>
+
+    <!--Tela User Menu-->
+    <string name="txt_solicitar_veiculo">Solicitar Veículo</string>
+    <string name="txt_minhas_locacoes">Minhas Locações</string>
+    <string name="txt_acionar_socorro">Acionar Socorro</string>
+    <string name="txt_minha_locacao">Minha Solicitação</string>
+
+    <!--Tela User Solicita Veículo-->
+    <string name="txt_solicitacao_veiculo">Solicitação de Veículo</string>
+    <string name="txt_departamento">Departamento</string>
+    <string name="txt_nome">Nome</string>
+    <string name="txt_motivo">Motivo</string>
+    <string name="txt_periodo">Período</string>
+    <string name="txt_dias">Dias</string>
+    <string name="txt_horas">Horas</string>
+    <string name="txt_hora_inicio">Hora de Início Ideal</string>
+    <string name="txt_enviar">Enviar</string>
+
+    <!--Tela User Vê Solicitação-->
+    <string name="txt_minha_solic">Minha Solicitação</string>
+    <string name="txt_deferido">Deferido</string>
+    <string name="txt_veiculo_disp">Veículo Disponibilizado</string>
+    <string name="txt_local_retir">Local para Retirada</string>
+    <string name="txt_hora_retir">Hora para Retirada</string>
+
+    <!--Tela User Aciona Socorro-->
+    <string name="txt_problema">Problema</string>
+    <string name="txt_selecione">Selecione...</string>
+    <string name="txt_prob_mecanico">Mecânico</string>
+    <string name="txt_prob_roubo">Roubo</string>
+    <string name="txt_prob_outro">Outro</string>
+    <string name="txt_detalhes">Detalhes (opcional)</string>
+    <string name="txt_enviar_solic">Enviar Solicitação</string>
+
+
+    <!--NELSON-->
+    <string name="lblNome">Nome:</string>
+    <string name="lblCPF">CPF:</string>
+    <string name="lblSetor">Setor:</string>
+    <string name="lblTelefone">Telefone:</string>
+    <string name="btnGravarUsuarios">Gravar</string>
+
+    <string name="btnVoltar">Voltar</string>
+    <string name="btnGravar">Gravar</string>
+
+    <string name="lblMarca">Marca:</string>
+    <string name="lblModelo">Modelo:</string>
+    <string name="lblAno">Ano:</string>
+    <string name="lblCombustivel">Combustivel:</string>
+    <string name="lblChassi">Chassi:</string>
+    <string name="lblPlaca">Placa:</string>
+
+    <string name="lblInformePlaca">Informe a Placa:</string>
+    <string name="lblKmRodado">Km Rodado:</string>
+    <string name="lblSituacao">Situação Atual:</string>
+    <string name="lblSinistro">Sinistro:</string>
+
+    <string name="btnConsultar">Consultar</string>
+    <string name="btnPesquisa">Pesquisar</string>
+    <string name="Senha">Senha</string>
+    <string name="Logar">Logar</string>
+
+    <!--Tela Gerente aprova Solicitação -->
+    <string name="lblInformacao">Clique para Selecionar</string>
+
+    <!--Tela Gerente Detalhe de Solicitacao -->
+    <string name="btnConsularVeiculos">Veiculos Disponiveis</string>
+    <string name="btnAprovar">APROVAR</string>
+    <string name="btnCancelar">CANCELAR</string>
+</resources>

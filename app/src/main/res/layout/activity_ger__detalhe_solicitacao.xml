@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.matheus.citycar.Activity_ger_DetalheSolicitacao"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/lblDetalheNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/lblNome"
+        tools:text="@string/lblNome"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDetalheNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/lblDetalhePeriodo"
+        app:layout_constraintRight_toRightOf="@+id/txtDetalhePeriodo"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtDetalhePeriodo" />
+
+    <TextView
+        android:id="@+id/lblDetalheSetor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/lblSetor"
+        tools:text="@string/lblSetor"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtDetalheSetor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDetalheSetor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="21dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/txtDetalheNome" />
+
+    <TextView
+        android:id="@+id/lblDetalhePeriodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/txt_periodo"
+        tools:text="@string/txt_periodo"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="75dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDetalhePeriodo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:maxLines="2"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintRight_toLeftOf="@+id/txtDetalheHoraInicio"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetalheNome"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/lblDetalheMotivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/txt_motivo"
+        tools:text="@string/txt_motivo"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetalhePeriodo"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/lblDetalheHoraInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/txt_hora_inicio"
+        tools:text="@string/txt_hora_inicio"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetalheSetor"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtDetalheHoraInicio" />
+
+    <Button
+        android:id="@+id/btnDetalheSolicitacaoVeiculos"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="17dp"
+        android:onClick="listaVeiculoClicked"
+        android:text="Button"
+        tools:text="@string/btnConsularVeiculos"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancelar"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDetalheMotivo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_marginStart="8dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblDetalheMotivo"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDetalheHoraInicio"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_marginStart="188dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDetalheMotivo"
+        android:layout_marginTop="73dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblDetalheSetor"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/lblDetalheVeiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/lblPlaca"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtDetalhePlaca"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/lblDetalhePlaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:text="@string/lblModelo"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="108dp"
+        app:layout_constraintRight_toRightOf="@+id/btnDetalheSolicitacaoVeiculos"
+        android:layout_marginTop="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetalheMotivo"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/btnCancelar" />
+
+    <EditText
+        android:id="@+id/txtDetalhePlaca"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintRight_toLeftOf="@+id/txtDetalheModelo"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtDetalheModelo"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDetalheModelo"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnDetalheSolicitacaoVeiculos"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblDetalhePlaca"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintLeft_toLeftOf="@+id/lblDetalhePlaca" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCancelar"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnAprovar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="23dp"
+        android:onClick="btnAprovar"
+        android:text="@string/btnAprovar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDetalheSolicitacaoVeiculos"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/layout-v21/notification_action_tombstone.xml"
+    }
+]

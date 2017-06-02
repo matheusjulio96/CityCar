@@ -1,0 +1,159 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:2:1-39:12
+	package
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:3:5-42
+		INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml
+		INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml
+		INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml
+		INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:6:5-71
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:6:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:7:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:8:5-72
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:8:22-69
+application
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:10:5-37:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/matheus/.android/build-cache/6c1f92115a36a98426acefe74e7097c7cd7545ff/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] /home/matheus/.android/build-cache/f7b02137a44d15a09e22c2379cec4c46dac622b8/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/matheus/.android/build-cache/11a340078578f69e84d3cbfd3456c512161b10ce/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/matheus/.android/build-cache/6bd56165a9d3fde5b451d3530fd37e64da3fd320/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /home/matheus/.android/build-cache/0be3d0c03b4b23adde65dca31741b0ee2caf7cd0/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /home/matheus/.android/build-cache/8568897ca3f0679aa64c80bce364b1d191445840/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/matheus/.android/build-cache/123d8d02e6554f7e95340ea59959d94c54ba5c54/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/matheus/.android/build-cache/d1f2030746d9295828a06aaecaa369f668f9451a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/matheus/.android/build-cache/dfcaff797d09ea82ce299229d2b531c3da980da6/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/matheus/.android/build-cache/f4d8895fec8a124e1cd0afb807fc20519610e67f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/matheus/.android/build-cache/96b0247149e4e8ff6548c8d079c704d6d830f62e/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:13:9-41
+	android:supportsRtl
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:15:9-35
+	android:roundIcon
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:14:9-54
+	android:allowBackup
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:12:9-43
+	android:theme
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:16:9-40
+activity#com.example.matheus.citycar.Activity_login
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:17:9-23:20
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:17:19-49
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:21:27-74
+activity#com.example.matheus.citycar.Activity_user_ve_solicitacao
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:24:9-66
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:24:19-63
+activity#com.example.matheus.citycar.Activity_user_solicita_veiculo
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:25:9-68
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:25:19-65
+activity#com.example.matheus.citycar.Activity_user_ve_locacoes
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:26:9-63
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:26:19-60
+activity#com.example.matheus.citycar.Activity_user_aciona_socorro
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:27:9-66
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:27:19-63
+activity#com.example.matheus.citycar.Activity_ger_cad_veiculo
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:28:9-62
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:28:19-59
+activity#com.example.matheus.citycar.Activity_ger_obt_info_veiculo
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:29:9-67
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:29:19-64
+activity#com.example.matheus.citycar.Activity_ger_cad_usuario
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:30:9-62
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:30:19-59
+activity#com.example.matheus.citycar.MainActivity
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:31:9-50
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:31:19-47
+activity#com.example.matheus.citycar.Activity_ger_aprov_solicitacao
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:32:9-68
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:32:19-65
+activity#com.example.matheus.citycar.Activity_ger_menu
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:33:9-55
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:33:19-52
+activity#com.example.matheus.citycar.Activity_ger_AprovaSolicitacao
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:34:9-68
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:34:19-65
+activity#com.example.matheus.citycar.Activity_ger_DetalheSolicitacao
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:35:9-69
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:35:19-66
+activity#com.example.matheus.citycar.Activity_Lista_Veiculos_Disponiveis
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:36:9-82
+	android:name
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:36:19-70
+uses-sdk
+INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/matheus/.android/build-cache/6c1f92115a36a98426acefe74e7097c7cd7545ff/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] /home/matheus/.android/build-cache/f7b02137a44d15a09e22c2379cec4c46dac622b8/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/matheus/.android/build-cache/11a340078578f69e84d3cbfd3456c512161b10ce/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/matheus/.android/build-cache/6bd56165a9d3fde5b451d3530fd37e64da3fd320/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/matheus/.android/build-cache/88f71f49545435bbec71862e59482aa144f4b54b/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] /home/matheus/.android/build-cache/0be3d0c03b4b23adde65dca31741b0ee2caf7cd0/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] /home/matheus/.android/build-cache/8568897ca3f0679aa64c80bce364b1d191445840/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /home/matheus/.android/build-cache/123d8d02e6554f7e95340ea59959d94c54ba5c54/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/matheus/.android/build-cache/d1f2030746d9295828a06aaecaa369f668f9451a/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/matheus/.android/build-cache/dfcaff797d09ea82ce299229d2b531c3da980da6/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/matheus/.android/build-cache/f4d8895fec8a124e1cd0afb807fc20519610e67f/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] /home/matheus/.android/build-cache/96b0247149e4e8ff6548c8d079c704d6d830f62e/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /home/matheus/.android/build-cache/f7b02137a44d15a09e22c2379cec4c46dac622b8/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml
+		INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml
+		INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /home/matheus/.android/build-cache/f7b02137a44d15a09e22c2379cec4c46dac622b8/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/matheus/.android/build-cache/11a340078578f69e84d3cbfd3456c512161b10ce/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/matheus/.android/build-cache/6bd56165a9d3fde5b451d3530fd37e64da3fd320/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/matheus/.android/build-cache/88f71f49545435bbec71862e59482aa144f4b54b/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /home/matheus/.android/build-cache/0be3d0c03b4b23adde65dca31741b0ee2caf7cd0/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/matheus/.android/build-cache/8568897ca3f0679aa64c80bce364b1d191445840/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/matheus/.android/build-cache/123d8d02e6554f7e95340ea59959d94c54ba5c54/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/matheus/.android/build-cache/d1f2030746d9295828a06aaecaa369f668f9451a/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/matheus/.android/build-cache/dfcaff797d09ea82ce299229d2b531c3da980da6/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/matheus/.android/build-cache/f4d8895fec8a124e1cd0afb807fc20519610e67f/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/matheus/.android/build-cache/96b0247149e4e8ff6548c8d079c704d6d830f62e/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /home/matheus/.android/build-cache/f7b02137a44d15a09e22c2379cec4c46dac622b8/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /home/matheus/.android/build-cache/f7b02137a44d15a09e22c2379cec4c46dac622b8/output/AndroidManifest.xml:26:9-47

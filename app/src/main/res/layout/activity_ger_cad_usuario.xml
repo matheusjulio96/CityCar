@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.matheus.citycar.Activity_ger_cad_usuario"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <EditText
+        android:id="@+id/txtLCPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lblNome"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/lblCPF"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/lblNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblNome"
+        android:layout_above="@+id/txtNome"
+        android:layout_alignStart="@+id/lblSetor"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtLCPF"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/lblsenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtNome"
+        android:layout_alignStart="@+id/lblSetor"
+        android:text="@string/Senha"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtSenha"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtTelefone" />
+
+    <EditText
+        android:id="@+id/txtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/txtTelefone"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefone"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtTelefone" />
+
+    <EditText
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtLCPF"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/lblNome" />
+
+    <TextView
+        android:id="@+id/lblCPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblCPF"
+        android:layout_above="@+id/txtLCPF"
+        android:layout_alignStart="@+id/lblNome"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtLCPF"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblSetor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblSetor"
+        android:layout_above="@+id/txtSetor"
+        android:layout_alignStart="@+id/lblTelefone"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSetor"
+        android:layout_marginTop="41dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblNome"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/lblTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblTelefone"
+        android:layout_above="@+id/txtTelefone"
+        android:layout_alignParentStart="true"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTelefone"
+        android:layout_marginTop="42dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtSetor"
+        app:layout_constraintTop_toTopOf="@+id/txtSetor" />
+
+    <EditText
+        android:id="@+id/txtTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_above="@+id/btnGravarUsuarios"
+        android:layout_alignParentStart="true"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/txtSetor"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtSetor"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtSetor" />
+
+    <Button
+        android:id="@+id/btnGravarUsuarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnGravarUsuario"
+        android:text="@string/btnGravarUsuarios"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/txtTelefone"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/lblTelefone"
+        android:text=""
+        android:layout_marginEnd="36dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/txtLCPF"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtSetor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lblTelefone"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/txtNome"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtNome" />
+
+    <Button
+        android:id="@+id/btnPesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtLCPF"
+        android:layout_alignTop="@+id/txtLCPF"
+        android:layout_toEndOf="@+id/textView"
+        android:onClick="btnPesquisar"
+        android:text="@string/btnPesquisa"
+        android:layout_marginEnd="14dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
