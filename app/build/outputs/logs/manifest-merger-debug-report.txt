@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:2:1-39:12
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:3:5-42
 		INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManif
 	android:name
 		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:8:22-69
 application
-ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:10:5-37:19
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:10:5-36:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/matheus/.android/build-cache/6c1f92115a36a98426acefe74e7097c7cd7545ff/output/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] /home/matheus/.android/build-cache/f7b02137a44d15a09e22c2379cec4c46dac622b8/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/AndroidManifest.xml:29:5-20
@@ -97,26 +97,22 @@ activity#com.example.matheus.citycar.MainActivity
 ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:31:9-50
 	android:name
 		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:31:19-47
-activity#com.example.matheus.citycar.Activity_ger_aprov_solicitacao
-ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:32:9-68
-	android:name
-		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:32:19-65
 activity#com.example.matheus.citycar.Activity_ger_menu
-ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:33:9-55
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:32:9-55
 	android:name
-		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:33:19-52
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:32:19-52
 activity#com.example.matheus.citycar.Activity_ger_AprovaSolicitacao
-ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:34:9-68
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:33:9-68
 	android:name
-		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:34:19-65
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:33:19-65
 activity#com.example.matheus.citycar.Activity_ger_DetalheSolicitacao
-ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:35:9-69
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:34:9-69
 	android:name
-		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:35:19-66
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:34:19-66
 activity#com.example.matheus.citycar.Activity_Lista_Veiculos_Disponiveis
-ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:36:9-82
+ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:35:9-82
 	android:name
-		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:36:19-70
+		ADDED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml:35:19-70
 uses-sdk
 INJECTED from /home/matheus/AndroidStudioProjects/CityCar/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/matheus/.android/build-cache/6c1f92115a36a98426acefe74e7097c7cd7545ff/output/AndroidManifest.xml:5:5-7:41

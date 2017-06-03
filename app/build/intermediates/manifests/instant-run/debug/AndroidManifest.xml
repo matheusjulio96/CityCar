@@ -39,8 +39,10 @@
         <activity android:name="com.example.matheus.citycar.Activity_ger_obt_info_veiculo" />
         <activity android:name="com.example.matheus.citycar.Activity_ger_cad_usuario" />
         <activity android:name="com.example.matheus.citycar.MainActivity" />
-        <activity android:name="com.example.matheus.citycar.Activity_ger_aprov_solicitacao" />
         <activity android:name="com.example.matheus.citycar.Activity_ger_menu" />
+        <activity android:name="com.example.matheus.citycar.Activity_ger_AprovaSolicitacao" />
+        <activity android:name="com.example.matheus.citycar.Activity_ger_DetalheSolicitacao" />
+        <activity android:name="com.example.matheus.citycar.Activity_Lista_Veiculos_Disponiveis" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

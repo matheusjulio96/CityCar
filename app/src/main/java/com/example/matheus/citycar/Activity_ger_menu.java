@@ -19,7 +19,10 @@ public class Activity_ger_menu extends AppCompatActivity {
         setContentView(R.layout.activity_ger_menu);
 
         String[] itens = {
-                "Cadastrar Veiculo","Obter Info. Veiculo","Cadastrar Usuario"};
+                "Cadastrar Veiculo",
+                "Obter Info. Veiculo",
+                "Cadastrar Usuario",
+                "Aprovar Solicitações"};
 
         opcoes = (ListView) findViewById(R.id.opcoes);
 
@@ -33,7 +36,10 @@ public class Activity_ger_menu extends AppCompatActivity {
         txtUsuario.setText(usuarioLogado.getNome());
 
         final Class[] telas = {
-                Activity_ger_cad_veiculo.class,Activity_ger_obt_info_veiculo.class, Activity_ger_cad_usuario.class};
+                Activity_ger_cad_veiculo.class,
+                Activity_ger_obt_info_veiculo.class,
+                Activity_ger_cad_usuario.class,
+                Activity_ger_AprovaSolicitacao.class};
 
         opcoes.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {

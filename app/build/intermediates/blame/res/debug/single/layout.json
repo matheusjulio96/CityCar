@@ -12,10 +12,6 @@
         "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/activity_ger_aprov_solicitacao.xml",
-        "source": "/home/matheus/AndroidStudioProjects/CityCar/app/src/main/res/layout/activity_ger_aprov_solicitacao.xml"
-    },
-    {
         "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/activity_ger_aprova_solicitacao.xml",
         "source": "/home/matheus/AndroidStudioProjects/CityCar/app/src/main/res/layout/activity_ger_aprova_solicitacao.xml"
     },
@@ -32,16 +28,16 @@
         "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
-        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/layout/notification_template_lines_media.xml"
+        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
         "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/layout/abc_list_menu_item_checkbox.xml"
+        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/layout/notification_template_lines_media.xml"
     },
     {
         "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
@@ -184,8 +180,16 @@
         "source": "/home/matheus/.android/build-cache/f7b02137a44d15a09e22c2379cec4c46dac622b8/output/res/layout/design_navigation_menu_item.xml"
     },
     {
+        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/model_lst_veiculos_disponiveis.xml",
+        "source": "/home/matheus/AndroidStudioProjects/CityCar/app/src/main/res/layout/model_lst_veiculos_disponiveis.xml"
+    },
+    {
         "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
         "source": "/home/matheus/.android/build-cache/f7b02137a44d15a09e22c2379cec4c46dac622b8/output/res/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/model_lst_solicitacao.xml",
+        "source": "/home/matheus/AndroidStudioProjects/CityCar/app/src/main/res/layout/model_lst_solicitacao.xml"
     },
     {
         "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",

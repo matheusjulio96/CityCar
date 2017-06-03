@@ -53,6 +53,7 @@ public class Activity_ger_AprovaSolicitacao extends AppCompatActivity {
                     Intent intent = new Intent(Activity_ger_AprovaSolicitacao.this,Activity_ger_DetalheSolicitacao.class);
                     intent.putExtra("usuario", aprovar);
                     startActivity(intent);
+                    finish();
 
                 }
             });
