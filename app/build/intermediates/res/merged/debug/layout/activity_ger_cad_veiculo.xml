@@ -14,9 +14,13 @@
         android:layout_height="wrap_content"
         android:text="@string/lblMarca"
         tools:layout_constraintTop_creator="1"
-        app:layout_constraintTop_toBottomOf="@+id/txtPlaca"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/txtMarca"
+        android:layout_marginTop="42dp"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/txtPlaca" />
+        android:layout_marginBottom="41dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtPlaca"
+        app:layout_constraintTop_toTopOf="@+id/txtPlaca" />
 
     <TextView
         android:id="@+id/lblModelo"
@@ -34,19 +38,24 @@
         android:layout_height="wrap_content"
         android:text="@string/lblAno"
         tools:layout_constraintTop_creator="1"
-        app:layout_constraintTop_toBottomOf="@+id/txtModelo"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtCombustivel"
+        android:layout_marginTop="59dp"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/txtModelo" />
+        android:layout_marginBottom="61dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtModelo"
+        app:layout_constraintTop_toTopOf="@+id/lblModelo" />
 
     <TextView
         android:id="@+id/lblCombustivel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lblCombustivel"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/txtCombustivel"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtAno"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/txtAno" />
+        app:layout_constraintLeft_toLeftOf="@+id/txtCombustivel" />
 
     <TextView
         android:id="@+id/lblChassi"
@@ -63,12 +72,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lblPlaca"
-        tools:layout_constraintTop_creator="1"
         android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
         android:layout_marginTop="16dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPlaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/lblPlaca"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/lblPlaca" />
 
     <EditText
         android:id="@+id/txtMarca"
@@ -79,7 +99,7 @@
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="@+id/txtPlaca"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="14dp"
         app:layout_constraintTop_toBottomOf="@+id/txtPlaca"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/txtPlaca" />
@@ -99,6 +119,22 @@
         app:layout_constraintLeft_toLeftOf="@+id/txtMarca" />
 
     <EditText
+        android:id="@+id/txtAno"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="4"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtCombustivel"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/lblMarca"
+        app:layout_constraintTop_toTopOf="@+id/lblMarca" />
+
+    <EditText
         android:id="@+id/txtCombustivel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -107,7 +143,7 @@
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="@+id/txtModelo"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="77dp"
         app:layout_constraintTop_toBottomOf="@+id/txtModelo"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/txtModelo" />
@@ -126,45 +162,42 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/txtCombustivel" />
 
-    <EditText
-        android:id="@+id/txtPlaca"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintTop_toBottomOf="@+id/lblPlaca"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/lblPlaca" />
-
     <Button
         android:id="@+id/cadastrar"
-        android:layout_width="133dp"
-        android:layout_height="54dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:onClick="cadastrarClicked"
         android:text="@string/btnGravar"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblKmRodado"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtKmRodado"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="35dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginBottom="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtChassi" />
 
     <EditText
-        android:id="@+id/txtAno"
-        android:layout_width="116dp"
-        android:layout_height="46dp"
+        android:id="@+id/txtKmRodado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        android:maxLength="4"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/lblCombustivel"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/txtChassi"
         android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtChassi"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="17dp"
-        app:layout_constraintLeft_toLeftOf="@+id/lblMarca"
-        app:layout_constraintTop_toTopOf="@+id/lblMarca" />
+        app:layout_constraintLeft_toLeftOf="@+id/txtChassi" />
 
 </android.support.constraint.ConstraintLayout>

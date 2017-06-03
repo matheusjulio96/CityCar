@@ -70,6 +70,8 @@
     <string name="lblInformacao">Clique para Selecionar</string>
 
     <!--Tela Gerente Detalhe de Solicitacao -->
+    <string name="lblLocalRetir">Local de Retirada:</string>
+    <string name="lblHoraRetir">Hora de Retirada:</string>
     <string name="btnConsularVeiculos">Veiculos Disponiveis</string>
     <string name="btnAprovar">APROVAR</string>
     <string name="btnCancelar">CANCELAR</string>

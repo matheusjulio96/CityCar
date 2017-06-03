@@ -22,6 +22,7 @@ public class Activity_ger_cad_veiculo extends AppCompatActivity {
         txtCombustivel=(EditText)findViewById(R.id.txtCombustivel);
         txtChassi=(EditText)findViewById(R.id.txtChassi);
         txtPlaca=(EditText)findViewById(R.id.txtPlaca);
+        txtKmRodado=(EditText)findViewById(R.id.txtKmRodado);
     }
 
     EditText txtMarca;
@@ -30,16 +31,18 @@ public class Activity_ger_cad_veiculo extends AppCompatActivity {
     EditText txtCombustivel;
     EditText txtChassi;
     EditText txtPlaca;
+    EditText txtKmRodado;
 
     public void cadastrarClicked(View v){
         try{
             Veiculo ve = new Veiculo(
-                    ((EditText)findViewById(R.id.txtMarca)).getText().toString(),
-                    ((EditText)findViewById(R.id.txtModelo)).getText().toString(),
-                    ((EditText)findViewById(R.id.txtAno)).getText().toString(),
-                    ((EditText)findViewById(R.id.txtCombustivel)).getText().toString(),
-                    ((EditText)findViewById(R.id.txtChassi)).getText().toString(),
-                    ((EditText)findViewById(R.id.txtPlaca)).getText().toString());
+                    txtMarca.getText().toString(),
+                    txtModelo.getText().toString(),
+                    txtAno.getText().toString(),
+                    txtCombustivel.getText().toString(),
+                    txtChassi.getText().toString(),
+                    txtPlaca.getText().toString());
+            ve.setKmRodado(Integer.parseInt(txtKmRodado.getText().toString()));
 
             banco.insertVeiculo(ve);
             limpaCampos();
@@ -61,5 +64,6 @@ public class Activity_ger_cad_veiculo extends AppCompatActivity {
         txtMarca.setText("");
         txtModelo.setText("");
         txtPlaca.setText("");
+        txtKmRodado.setText("");
     }
 }

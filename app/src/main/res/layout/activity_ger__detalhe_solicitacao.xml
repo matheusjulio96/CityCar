@@ -16,6 +16,7 @@
         android:text="@string/lblNome"
         tools:text="@string/lblNome"
         tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/txtDetalheNome"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,15 +26,16 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
         android:singleLine="false"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintRight_toLeftOf="@+id/txtDetalheSetor"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="25dp"
+        android:editable="false"
+        android:inputType="none"
+        app:layout_constraintRight_toLeftOf="@+id/lblDetalheSetor"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtDetalheSetor"
-        tools:layout_constraintBaseline_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/lblDetalheNome"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent" />
 
@@ -44,27 +46,26 @@
         android:text="@string/lblSetor"
         tools:text="@string/lblSetor"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="29dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/txtDetalheSetor"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="141dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtDetalheSetor"
-        android:layout_width="199dp"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="none"
         android:textAppearance="@style/TextAppearance.AppCompat"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/txtDetalheHoraInicio"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="21dp"
-        app:layout_constraintTop_toTopOf="@+id/lblDetalheSetor" />
+        app:layout_constraintRight_toRightOf="@+id/txtDetalheModelo"
+        app:layout_constraintTop_toBottomOf="@+id/lblDetalheSetor"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/lblDetalheSetor" />
 
     <TextView
         android:id="@+id/lblDetalhePeriodo"
@@ -73,27 +74,27 @@
         android:text="@string/txt_periodo"
         tools:text="@string/txt_periodo"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/lblDetalheHoraInicio"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetalheNome"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/lblDetalheHoraInicio" />
+        app:layout_constraintLeft_toLeftOf="@+id/txtDetalheNome" />
 
     <EditText
         android:id="@+id/txtDetalhePeriodo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="11sp"
         tools:maxLines="2"
+        android:editable="false"
+        android:inputType="none"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="16dp"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintRight_toRightOf="@+id/txtDetalheMotivo"
+        app:layout_constraintTop_toBottomOf="@+id/lblDetalhePeriodo"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/lblDetalhePeriodo"
-        app:layout_constraintTop_toTopOf="@+id/lblDetalhePeriodo" />
+        app:layout_constraintLeft_toLeftOf="@+id/lblDetalhePeriodo" />
 
     <TextView
         android:id="@+id/lblDetalheMotivo"
@@ -101,10 +102,11 @@
         android:layout_height="wrap_content"
         android:text="@string/txt_motivo"
         tools:text="@string/txt_motivo"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/txtDetalheMotivo"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetalhePeriodo"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/txtDetalheMotivo" />
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/lblDetalheHoraInicio"
@@ -113,69 +115,56 @@
         android:text="@string/txt_hora_inicio"
         tools:text="@string/txt_hora_inicio"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="62dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetalheSetor"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/txtDetalheHoraInicio"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@+id/txtDetalheSetor" />
 
     <Button
         android:id="@+id/btnDetalheSolicitacaoVeiculos"
         style="@style/Widget.AppCompat.Button.Small"
-        android:layout_width="0dp"
+        android:layout_width="355dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginStart="4dp"
         android:onClick="listaVeiculoClicked"
         android:text="@string/btnConsularVeiculos"
-        app:layout_constraintBottom_toTopOf="@+id/txtDetalheModelo"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
+        tools:textSize="12sp"
+        app:layout_constraintRight_toLeftOf="@+id/lblDetalhePlaca"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:text="@string/btnConsularVeiculos"
-        tools:textSize="12sp" />
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetalheMotivo"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/lblDetalhePlaca" />
 
     <EditText
         android:id="@+id/txtDetalheMotivo"
         android:layout_width="0dp"
-        android:layout_height="63dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
         android:ems="10"
-        android:inputType="textMultiLine"
+        android:inputType="none"
         android:textSize="12sp"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnDetalheSolicitacaoVeiculos"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="59dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblDetalheMotivo"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="56dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtDetalhePeriodo" />
+        app:layout_constraintLeft_toLeftOf="@+id/lblDetalheMotivo" />
+
 
     <EditText
         android:id="@+id/txtDetalheHoraInicio"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="25dp"
+        android:editable="false"
         android:ems="10"
-        android:inputType="textMultiLine"
+        android:inputType="none"
         android:textSize="11sp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/txtDetalheMotivo"
-        android:layout_marginStart="42dp"
-        android:layout_marginEnd="42dp"
         app:layout_constraintRight_toRightOf="@+id/txtDetalheSetor"
-        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/lblDetalheHoraInicio"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="22dp"
-        app:layout_constraintLeft_toLeftOf="@+id/txtDetalheModelo"
-        app:layout_constraintTop_toTopOf="@+id/lblDetalheHoraInicio" />
+        app:layout_constraintLeft_toRightOf="@+id/txtDetalheNome" />
 
     <TextView
         android:id="@+id/lblDetalheVeiculo"
@@ -183,64 +172,68 @@
         android:layout_height="wrap_content"
         android:text="@string/lblPlaca"
         tools:layout_constraintTop_creator="1"
-        app:layout_constraintTop_toBottomOf="@+id/btnDetalheSolicitacaoVeiculos"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="231dp"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/btnDetalheSolicitacaoVeiculos" />
+        android:layout_marginBottom="230dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtDetalheNome" />
 
     <TextView
         android:id="@+id/lblDetalhePlaca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lblModelo"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="34dp"
-        app:layout_constraintTop_toBottomOf="@+id/btnDetalheSolicitacaoVeiculos"
+        android:layout_marginStart="1dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtDetalheModelo"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toRightOf="@+id/txtDetalhePlaca" />
+        app:layout_constraintLeft_toLeftOf="@+id/txtDetalheModelo" />
 
     <EditText
         android:id="@+id/txtDetalhePlaca"
-        android:layout_width="117dp"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="none"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/txtDetalheModelo"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintRight_toRightOf="@+id/btnCancelar"
         app:layout_constraintTop_toBottomOf="@+id/lblDetalheVeiculo"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/lblDetalheVeiculo" />
 
     <EditText
         android:id="@+id/txtDetalheModelo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:editable="false"
         android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_constraintTop_creator="1"
+        android:inputType="none"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="2dp"
-        app:layout_constraintRight_toRightOf="@+id/btnDetalheSolicitacaoVeiculos"
-        android:layout_marginTop="195dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="195dp"
-        app:layout_constraintLeft_toLeftOf="@+id/lblDetalhePlaca"
-        app:layout_constraintTop_toTopOf="@+id/txtDetalhePeriodo" />
-
+        app:layout_constraintBottom_toTopOf="@+id/txtDetalheSolicitacaoLocalRetirada"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="17dp" />
     <Button
         android:id="@+id/btnCancelar"
-        android:layout_width="119dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:onClick="btnCancelar"
         android:text="@string/btnCancelar"
         android:textSize="12sp"
+        android:layout_marginStart="16dp"
         tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="34dp"
         app:layout_constraintBottom_toBottomOf="@+id/btnAprovar"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="@+id/txtDetalhePeriodo"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btnAprovar" />
@@ -252,68 +245,65 @@
         android:onClick="btnAprovar"
         android:text="@string/btnAprovar"
         android:textSize="12sp"
+        android:layout_marginEnd="16dp"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="50dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="43dp" />
+        android:layout_marginTop="37dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetalheSolicitacaoHoraRetirada"
+        android:layout_marginBottom="49dp" />
 
     <EditText
         android:id="@+id/txtDetalheSolicitacaoLocalRetirada"
-        android:layout_width="215dp"
-        android:layout_height="51dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textMultiLine"
         android:textSize="12sp"
+        app:layout_constraintRight_toLeftOf="@+id/txtDetalheSolicitacaoHoraRetirada"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/textView14"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtDetalheSolicitacaoHoraRetirada"
-        tools:layout_constraintBaseline_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toRightOf="@+id/textView14" />
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Local de Retirada"
+        android:text="@string/lblLocalRetir"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="13dp"
         app:layout_constraintTop_toBottomOf="@+id/txtDetalhePlaca"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@+id/txtDetalhePlaca" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hora Retirada:"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/txtDetalheSolicitacaoLocalRetirada"
-        android:layout_marginStart="6dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/lblHoraRetir"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetalheModelo"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/txtDetalheSolicitacaoHoraRetirada" />
+        app:layout_constraintLeft_toLeftOf="@+id/txtDetalheModelo" />
 
     <EditText
         android:id="@+id/txtDetalheSolicitacaoHoraRetirada"
         android:layout_width="0dp"
-        android:layout_height="54dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="12sp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/btnAprovar"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toBottomOf="@+id/txtDetalheModelo"
+        app:layout_constraintRight_toRightOf="@+id/txtDetalheModelo"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="26dp"
-        app:layout_constraintLeft_toRightOf="@+id/lblDetalhePlaca" />
+        app:layout_constraintLeft_toLeftOf="@+id/textView15" />
 
 </android.support.constraint.ConstraintLayout>

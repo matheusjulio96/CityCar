@@ -100,4 +100,12 @@ public class Activity_user_solicita_veiculo extends AppCompatActivity {
             mensagem.show();
         }
     }
+
+    public void limpaCampos(){
+        txtMotivo.setText("");
+        spinPeriodo.setSelection(0);
+        radioDias.setChecked(true);
+        radioHoras.setChecked(false);
+        txtHoraIdeal.setText("");
+    }
 }

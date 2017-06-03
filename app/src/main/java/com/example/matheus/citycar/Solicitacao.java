@@ -14,6 +14,7 @@ public class Solicitacao {
 
     private boolean deferido;
     private String placaVeiculo;
+    private String localRetirada;
 
     public Solicitacao() {
     }
@@ -89,5 +90,13 @@ public class Solicitacao {
 
     public void setPlacaVeiculo(String placaVeiculo) {
         this.placaVeiculo = placaVeiculo;
+    }
+
+    public String getLocalRetirada() {
+        return localRetirada;
+    }
+
+    public void setLocalRetirada(String localRetirada) {
+        this.localRetirada = localRetirada;
     }
 }

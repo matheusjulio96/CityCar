@@ -15,36 +15,41 @@
         android:text="@string/txt_motivo"
         android:textSize="18dp"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="13dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtHora"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="@+id/txtMotivo" />
+
+    <CheckBox
+        android:id="@+id/cboxDeferido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_deferido"
+        android:layout_marginStart="16dp"
+        android:editable="false"
+        android:inputType="none"
+        android:clickable="false"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtMotivo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textMultiLine"
+        android:editable="false"
+        android:inputType="none"
+        android:clickable="false"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/editText2"
-        android:layout_marginTop="34dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintRight_toRightOf="@+id/txtHora"
+        android:layout_marginTop="33dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtHora"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/editText2" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_deferido"
-        android:layout_marginStart="16dp"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="16dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@+id/txtHora" />
 
     <TextView
         android:id="@+id/textView"
@@ -52,70 +57,76 @@
         android:layout_height="wrap_content"
         android:text="@string/txt_hora_retir"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/txtHora"
+        android:layout_marginStart="16dp"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/editText2" />
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txt_local_retir"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/txtModelo"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtLocal"
+        android:layout_marginStart="1dp"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/editText" />
+        android:layout_marginBottom="1dp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtLocal" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/txt_veiculo_disp"
-        android:layout_marginStart="16dp"
         tools:layout_constraintTop_creator="1"
         android:layout_marginTop="18dp"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/cboxDeferido"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@+id/txtModelo" />
 
     <EditText
         android:id="@+id/txtModelo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textMultiLine"
+        android:editable="false"
+        android:inputType="none"
+        android:clickable="false"
         tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/txtHora"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/textView6" />
+        app:layout_constraintLeft_toLeftOf="@+id/txtHora" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtLocal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textMultiLine"
+        android:editable="false"
+        android:inputType="none"
+        android:clickable="false"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:layout_marginStart="15dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/txtHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:editable="false"
+        android:inputType="none"
+        android:clickable="false"
         tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/txtModelo"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="94dp"
         app:layout_constraintTop_toBottomOf="@+id/txtModelo"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/txtModelo" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/editText"
-        android:layout_marginTop="28dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/editText" />
+        app:layout_constraintLeft_toLeftOf="@+id/textView" />
 
 </android.support.constraint.ConstraintLayout>

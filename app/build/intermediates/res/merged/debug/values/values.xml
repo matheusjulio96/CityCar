@@ -695,9 +695,11 @@
     <string name="lblCPF">CPF:</string>
     <string name="lblChassi">Chassi:</string>
     <string name="lblCombustivel">Combustivel:</string>
+    <string name="lblHoraRetir">Hora de Retirada:</string>
     <string name="lblInformacao">Clique para Selecionar</string>
     <string name="lblInformePlaca">Informe a Placa:</string>
     <string name="lblKmRodado">Km Rodado:</string>
+    <string name="lblLocalRetir">Local de Retirada:</string>
     <string name="lblMarca">Marca:</string>
     <string name="lblModelo">Modelo:</string>
     <string name="lblNome">Nome:</string>
