@@ -8,28 +8,28 @@
         "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
-        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/drawable/notification_tile_bg.xml"
+        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
         "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/drawable/abc_ic_clear_material.xml"
     },
     {
-        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
+        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/drawable/notification_tile_bg.xml"
     },
     {
         "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
         "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/drawable/abc_list_selector_holo_dark.xml"
-    },
-    {
         "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
         "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/matheus/.android/build-cache/8b28d42d6b6056197c45d94abf40e6aa8a597327/output/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",

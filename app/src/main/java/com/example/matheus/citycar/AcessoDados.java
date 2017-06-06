@@ -37,7 +37,7 @@ public class AcessoDados extends SQLiteOpenHelper {
         //nao precisa de autoincrement pq sqlite cria rowid automaticamente
         DDL = "CREATE TABLE solicitacao(cpf_usuario INTEGER references usuario, motivo TEXT, periodo INTEGER," +
                 "p_dias BOOLEAN, p_horas BOOLEAN, hora_ideal TEXT, deferido BOOLEAN, localRetirada TEXT,horaRetirada TEXT,"+
-                "kmRetirada ,placa_veic TEXT references veiculo)";
+                "kmRetirada ,placa_veic TEXT references veiculo, status BOOLEAN)";
         banco.execSQL(DDL);
     }
 
@@ -188,6 +188,7 @@ public class AcessoDados extends SQLiteOpenHelper {
         valores.put("hora_ideal", solicitacao.getHoraIdeal());
         valores.put("deferido", solicitacao.isDeferido());
         valores.put("placa_veic", solicitacao.getPlacaVeiculo());
+        valores.put("status", 0);
 
         banco.insert("solicitacao", null, valores);
     }
@@ -292,15 +293,19 @@ public class AcessoDados extends SQLiteOpenHelper {
         }
     }
 
-    public void aprovarSolicitacao(AprovaSolicitacao solicitacao){
+    public void aprovarSolicitacao(AprovaSolicitacao solicitacao, int deferido){
 
         //Toast.makeText(null,"veio = "+solicitacao.getPlaca() + solicitacao.getIdRegistro(), Toast.LENGTH_LONG).show();
         SQLiteDatabase banco = this.getWritableDatabase();
         ContentValues valores = new ContentValues();
-        valores.put("hora_ideal", solicitacao.getHoraIdeal());
-        valores.put("localRetirada", solicitacao.getLocalRetirada());
-        valores.put("deferido", 1);
-        valores.put("placa_veic", solicitacao.getPlaca());
+        if (deferido == 1) {
+            valores.put("hora_ideal", solicitacao.getHoraIdeal());
+            valores.put("localRetirada", solicitacao.getLocalRetirada());
+            valores.put("placa_veic", solicitacao.getPlaca());
+            valores.put("deferido", deferido);
+        }
+        valores.put("status", 1);
+
         banco.update("solicitacao",valores,"rowid = "+solicitacao.getIdRegistro(),null);
         banco.close();
     }
@@ -308,7 +313,7 @@ public class AcessoDados extends SQLiteOpenHelper {
     public String[] consultarSolicitacoes(/*rowid inicial, rowid final,*/int cpfUser){
         SQLiteDatabase banco = this.getReadableDatabase();
         Cursor campo = banco.query("solicitacao", new String[] {
-                        "cpf_usuario","motivo", "hora_ideal", "deferido"}
+                        "cpf_usuario","motivo", "hora_ideal", "deferido", "status"}
                 , "cpf_usuario = " + cpfUser, null, null, null, "rowid desc", null);
         if (campo != null)
             campo.moveToFirst();
@@ -319,7 +324,12 @@ public class AcessoDados extends SQLiteOpenHelper {
 
         for(int i=0; i<qtd; i++){
             dados[i] = campo.getString(0) +" - "+ campo.getString(1) + " - "+ campo.getString(2) +" - ";
-            dados[i] += campo.getString(3).equals("1")?"✔":"✖";//✔-✖
+            if(campo.getString(4).equals("1")){
+                dados[i] += campo.getString(3).equals("1")?"✔":"✖";//✔-✖
+            }else{
+                dados[i] += "-";
+            }
+
             campo.moveToNext();//move para proxima linha
         }
 

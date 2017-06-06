@@ -63,9 +63,13 @@ public class Activity_ger_DetalheSolicitacao extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 0 ){
-            solicitacao =(AprovaSolicitacao) data.getSerializableExtra("valueId");
-            campo6.setText(solicitacao.getPlaca());
-            campo7.setText(solicitacao.getModelo());
+            try{
+                solicitacao =(AprovaSolicitacao) data.getSerializableExtra("valueId");
+                campo6.setText(solicitacao.getPlaca());
+                campo7.setText(solicitacao.getModelo());
+            }catch(Exception e){
+
+            }
         }
     }
 
@@ -76,14 +80,24 @@ public class Activity_ger_DetalheSolicitacao extends AppCompatActivity {
             AcessoDados conecta = new AcessoDados(this);
             solicitacao.setHoraRetirada(campo9.getText().toString());
             solicitacao.setLocalRetirada(campo8.getText().toString());
-            conecta.aprovarSolicitacao(solicitacao);
+            conecta.aprovarSolicitacao(solicitacao, 1);
             limpaCampos();
             Toast.makeText(getBaseContext(),"Aprovado !",Toast.LENGTH_LONG).show();
         }
     }
 
     public void btnCancelar(View view){
-        limpaCampos();
+
+        if (campo6.getText().length()<3){
+            Toast.makeText(getBaseContext(),"Necessário Escolher veiculo!",Toast.LENGTH_LONG).show();
+        }else{
+            AcessoDados conecta = new AcessoDados(this);
+            solicitacao.setHoraRetirada(campo9.getText().toString());
+            solicitacao.setLocalRetirada(campo8.getText().toString());
+            conecta.aprovarSolicitacao(solicitacao, 0);
+            limpaCampos();
+            Toast.makeText(getBaseContext(),"Reprovado !",Toast.LENGTH_LONG).show();
+        }
     }
 
     private void limpaCampos(){

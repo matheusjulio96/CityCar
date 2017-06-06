@@ -689,6 +689,7 @@
     <string name="btnGravar">Gravar</string>
     <string name="btnGravarUsuarios">Gravar</string>
     <string name="btnPesquisa">Pesquisar</string>
+    <string name="btnReprovar">REPROVAR</string>
     <string name="btnVoltar">Voltar</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="lblAno">Ano:</string>

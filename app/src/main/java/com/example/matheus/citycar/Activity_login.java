@@ -28,7 +28,7 @@ public class Activity_login extends AppCompatActivity {
         try{
             if(editCPF.getText().toString().length() != 0){
                 //Toast.makeText(this, editCPF.getText().toString(), Toast.LENGTH_LONG).show();
-                if(!editCPF.getText().equals("777")){
+                if(!editCPF.getText().toString().equals("777")){
                     int cpf = Integer.parseInt(editCPF.getText().toString());
                     Usuario usuarioLogado = banco.consultarUsuario(cpf);
 
@@ -51,12 +51,6 @@ public class Activity_login extends AppCompatActivity {
                 Toast mensagem = Toast.makeText(this,
                         "Digite o CPF.", Toast.LENGTH_LONG);
                 mensagem.show();
-
-
-                //PARA TESTES
-                Intent intent = new Intent(Activity_login.this, Activity_ger_menu.class); //intent para verificar se há recursos no aparelho
-                intent.putExtra("usuario", new Usuario(777,"Administrador","777","pref","none"));
-                startActivity(intent);
             }
 
             //nome, setor, cpf, telefone

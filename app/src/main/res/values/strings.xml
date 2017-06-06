@@ -74,5 +74,6 @@
     <string name="lblHoraRetir">Hora de Retirada:</string>
     <string name="btnConsularVeiculos">Veiculos Disponiveis</string>
     <string name="btnAprovar">APROVAR</string>
+    <string name="btnReprovar">REPROVAR</string>
     <string name="btnCancelar">CANCELAR</string>
 </resources>
