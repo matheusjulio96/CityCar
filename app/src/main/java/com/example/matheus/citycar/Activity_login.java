@@ -27,7 +27,7 @@ public class Activity_login extends AppCompatActivity {
     public void logarClicked(View v){
         try{
             if(editCPF.getText().toString().length() != 0){
-                Toast.makeText(this, editCPF.getText().toString(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(this, editCPF.getText().toString(), Toast.LENGTH_LONG).show();
                 if(!editCPF.getText().equals("777")){
                     int cpf = Integer.parseInt(editCPF.getText().toString());
                     Usuario usuarioLogado = banco.consultarUsuario(cpf);
