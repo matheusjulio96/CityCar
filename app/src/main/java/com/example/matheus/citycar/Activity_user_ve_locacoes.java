@@ -30,7 +30,7 @@ public class Activity_user_ve_locacoes extends AppCompatActivity {
         usuarioLogado = (Usuario) intent.getSerializableExtra("usuario");
 
         //String[] itens = {"Fusca Azul - 03/05/17","Fusca Preto - 04/05/17"};//solicitacoes
-        String[] dados = banco.consultarSolicitacoes(usuarioLogado.getCpf());//solicitacoes
+        final StructSolicitacoes ss = banco.consultarSolicitacoes(usuarioLogado.getCpf());//solicitacoes
         /*String[] locs = new String[dados.length/3];
 
         for(int i=0; i<locs.length; i++){
@@ -39,7 +39,7 @@ public class Activity_user_ve_locacoes extends AppCompatActivity {
 
         locacoes = (ListView) findViewById(R.id.locacoes);
 
-        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1, dados);
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1, ss.descricao);
         locacoes.setAdapter(adaptador);
 
         locacoes.setOnItemClickListener(
@@ -47,7 +47,7 @@ public class Activity_user_ve_locacoes extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         Intent intent = new Intent(Activity_user_ve_locacoes.this, Activity_user_ve_solicitacao.class); //intent para verificar se há recursos no aparelho
-                        intent.putExtra("numClick", position);
+                        intent.putExtra("numClick", ss.rowid[position]);
                         startActivity(intent);
                     }
                 }

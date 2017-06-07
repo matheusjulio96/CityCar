@@ -27,10 +27,9 @@ public class Activity_user_ve_solicitacao extends AppCompatActivity {
         setTitle(this.getString(R.string.txt_minha_solic));
 
         Intent intent = getIntent();
-        int num = (int) intent.getSerializableExtra("numClick");
+        int rowid = (int) intent.getSerializableExtra("numClick");
 
-        banco = new AcessoDados(this);
-        int rowid = banco.getNumeroRegistroSolicitacao()-num; //deveras porco
+        banco = new AcessoDados(this); //deveras porco
 
         solicitacao = banco.consultarSolicitacao(rowid);
 

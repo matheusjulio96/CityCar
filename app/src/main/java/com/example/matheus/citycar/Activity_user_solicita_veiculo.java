@@ -74,6 +74,8 @@ public class Activity_user_solicita_veiculo extends AppCompatActivity {
 
             banco.insertSolicitacao(so);
 
+            limpaCampos();
+
             Toast mensagem = Toast.makeText(this,
                     "Cadastrado..."+banco.getNumeroRegistroSolicitacao(), Toast.LENGTH_SHORT);
             mensagem.show();

@@ -6,22 +6,22 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1496772861129"
+    timestamp="1496868582256"
     token="-6895303576155953686"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="365" />
+        duration="457" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="19" />
+        duration="15" />
     <task
         name="verifier"
-        duration="1" />
+        duration="38" />
 
     <artifact
         location="/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -32,7 +32,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1496770892740"
+        timestamp="1496868232666"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -73,23 +73,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1496771841099"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1496772183993"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/matheus/AndroidStudioProjects/CityCar/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1496772861129"
+        timestamp="1496868582256"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/matheus/AndroidStudioProjects/CityCar/app/build/intermediates/split-apk/debug/slices/slice_3.apk"

@@ -310,10 +310,10 @@ public class AcessoDados extends SQLiteOpenHelper {
         banco.close();
     }
 
-    public String[] consultarSolicitacoes(/*rowid inicial, rowid final,*/int cpfUser){
+    public StructSolicitacoes consultarSolicitacoes(/*rowid inicial, rowid final,*/int cpfUser){
         SQLiteDatabase banco = this.getReadableDatabase();
         Cursor campo = banco.query("solicitacao", new String[] {
-                        "cpf_usuario","motivo", "hora_ideal", "deferido", "status"}
+                        "cpf_usuario","motivo", "hora_ideal", "deferido", "status", "rowid"}
                 , "cpf_usuario = " + cpfUser, null, null, null, "rowid desc", null);
         if (campo != null)
             campo.moveToFirst();
@@ -321,6 +321,7 @@ public class AcessoDados extends SQLiteOpenHelper {
         int qtd = campo.getCount();//qtd de registros que vieram
 
         String[] dados = new String[qtd];
+        int[] rowids = new int[qtd];
 
         for(int i=0; i<qtd; i++){
             dados[i] = campo.getString(0) +" - "+ campo.getString(1) + " - "+ campo.getString(2) +" - ";
@@ -330,11 +331,16 @@ public class AcessoDados extends SQLiteOpenHelper {
                 dados[i] += "-";
             }
 
+            rowids[i] = campo.getInt(5);
             campo.moveToNext();//move para proxima linha
         }
 
         campo.close();
 
-        return dados;
+        StructSolicitacoes ss = new StructSolicitacoes(qtd);
+        ss.descricao = dados;
+        ss.rowid = rowids;
+
+        return ss;
     }
 }
